@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.page1{
+    height: 100vh;
+    width: 100%;
+    /* background-color: seagreen; */
+    background-image: url(https://us.123rf.com/450wm/9dreamstudio/9dreamstudio2003/9dreamstudio200305981/142817108-beauty-saloon-accessories-combs-sciccors-on-white-background-top-down.jpg?ver=6);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav{
+    height: 10vh;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vmax;
+    box-shadow: 0 0 0.2vmax;
+    
+    /* border-bottom: 0.1vmax ridge black; */
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+.nav-logo >img{
+    height: 10vh;
+}
+.nav-logo >h1{
+    font-size: 2vmax;
+    transform: translate(0.5vmax,0.5vmax);
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 100;
+}
+.menu-icon >i{
+    font-size: 2vmax;
+}
+.nav-bar{
+    position: absolute;
+    top: 0;
+    right: -80%;
+    height: 10vh;
+    width: 60%;
+    display: flex;
+    transition: all linear 0.5s;
+    z-index: 10;
+    /* background-color: orange; */
+}
+.nav-bar >ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-bar >ul >li{
+    font-size: 1.2vmax;
+    /* background-color: palevioletred; */
+    padding: 0 0.5vmax;
+    transition: all linear 0.5s;
+    border-radius: 0.5vmax;
+    border-bottom: 0.2vmax solid transparent;
+    border-right: 0.2vmax solid transparent;
+    font-weight: 700;
+}
+.nav-bar >ul >li:hover{
+    border-bottom: 0.2vmax solid black;
+    border-right: 0.2vmax solid black;
+
+}
+.nav-bar >ul >button{
+    padding: 0.5vmax 1vmax;
+    font-weight: 700;
+    border-radius: 1vmax;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0 0 0.2vmax black;
+}
+.page1-contener{
+    height: 90vh;
+    width: 100%;
+    /* background-color: darkcyan; */
+    display: flex;
+}
+.page1-left{
+    height: 90vh;
+    width: 50%;
+    /* background-color: palegoldenrod; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page1-left-image{
+    height: 50vh;
+    width:  20vw ;
+    border-top-left-radius: 2vmax;
+    border-bottom-right-radius: 5vmax;
+    background-color: black;
+    background-image: url(https://as2.ftcdn.net/v2/jpg/02/06/11/53/1000_F_206115372_VePvJYXKF3Ls4Sc3RmURKBVlUmTvNG9j.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0.5vmax 0.5vmax 1vmax rgba(0, 0, 0, 0.339);
+
+}
+.page1-right{
+    height: 90vh;
+    width: 50%;
+    /* background-color: yellowgreen; */
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+.page1-right >h1{
+    /* background-color: red; */
+    font-size: 4.5vmax;
+    line-height: 4.5vmax;
+    margin-bottom: 1vmax;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.page1-right >p{
+    width: 70%;
+    /* background-color:violet; */
+    margin-bottom: 1vmax;
+    font-size: 1.8vmax;
+    font-family: cursive;
+    line-height: 1.8vmax;
+}
+.page1-right >button{
+    padding: 0.8vmax 2.5vmax;
+    border-radius: 0.5vmax;
+    border: none;
+    font-size: 1.2vmax;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+}
